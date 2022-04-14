@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Latli Haithem and Tigha Mohammed"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KiDZ">
+        <activity
+            android:name="com.example.LatliHaithem.memoryFinish"
+            android:exported="false" />
+        <activity
+            android:name="com.example.LatliHaithem.PopupAct"
+            android:exported="false" />
+        <activity
+            android:name="com.example.LatliHaithem.ImageAct"
+            android:exported="false"
+            android:label="Album"
+            android:parentActivityName="com.example.LatliHaithem.AlbumAct" />
+        <activity
+            android:name="com.example.LatliHaithem.MemoryAct"
+            android:exported="false"
+            android:label="Memory Game"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:parentActivityName="com.example.LatliHaithem.MainActivity" />
+        <activity
+            android:name="com.example.LatliHaithem.GessAct"
+            android:exported="false"
+            android:label="Guess IT"
+            android:parentActivityName="com.example.LatliHaithem.MainActivity" />
+        <activity
+            android:name="com.example.LatliHaithem.AlbumAct"
+            android:exported="false"
+            android:label="Album"
+            android:parentActivityName="com.example.LatliHaithem.MainActivity" />
+        <activity
+            android:name="com.example.LatliHaithem.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
